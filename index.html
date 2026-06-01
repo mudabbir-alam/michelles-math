@@ -23,7 +23,7 @@
           class="text-secondary font-semibold h-2/5 border-b-3 border-transparent hover:border-primary align-middle flex items-center">Testimonials</a>
       </nav>
       <a href="#contact"
-        class="hover:scale-110 shadow-2xl bg-primary text-white font-bold px-6 py-2 rounded-3xl">Get Started</a>
+        class="hover:scale-110 shadow-2xl bg-primary text-white font-bold px-8 py-2 rounded-3xl">Get Started</a>
     </div>
   </header>
   <div class="min-h-[95vh] absolute top-0 left-0 w-full -z-10">
@@ -165,30 +165,30 @@
           class="w-full aspect-video rounded-xl mt-2" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <form method="post" action="/" class="p-6 md:p-12 bg-white rounded-2xl shadow-lg space-y-8">
+      <form class="p-6 md:p-12 bg-white rounded-2xl shadow-lg space-y-8">
         <div class="grid grid-cols-2 gap-6">
           <div class="form-element">
             <label for="name">Full Name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
           </div>
           <div class="form-element">
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" required>
           </div>
         </div>
         <div class="form-element">
           <label for="email">Email Address</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" required>
         </div>
         <div class="form-element">
           <label for="message">Your Message</label>
-          <textarea name="message" id="message" rows="5"></textarea>
+          <textarea name="message" id="message" rows="5" required></textarea>
         </div>
         <div class="flex items-center gap-1">
           <input type="checkbox" name="bookDemo" id="bookDemo">
           <label for="bookDemo">Yes, I'd like to book a free demo session</label>
         </div>
-        <button type="submit"
+        <button type="submit" id="submit"
           class="shadow-lg cursor-pointer mt-2 text-center font-alegreya-sans font-semibold text-lg w-full rounded-full bg-primary hover:scale-105 text-white p-4 active:scale-95">Send
           Message</button>
       </form>
@@ -217,6 +217,7 @@
       <div class="text-secondary">Made with ❤️ by Mudabbir Alam</div>
     </div>
   </footer>
+  <script src="./src/contact.js" type="module"></script>
   <script>
     document.getElementById("currentYear").innerText = new Date().getFullYear();
   </script>
