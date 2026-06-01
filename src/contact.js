@@ -34,13 +34,13 @@ form.addEventListener("submit", async (e) => {
 
     await emailjs
         .send(
-            "service_qxas7om",
-            "template_j7j3802",
+            import.meta.env.VITE_EMAILJS_SERVICE,
+            import.meta.env.VITE_EMAILJS_TEMPLATE,
             {
                 website: "Michelle's Math",
                 content: content,
             },
-            "kDDU157bhVe5bSSOX",
+            import.meta.env.VITE_EMAILJS_PUBLIC
         )
         .then(() => {
             alert("Message Sent Successfully");
