@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #ff7f11;
+  --secondary: #0b0033;
+  --background: #f9f9f9;
+}
+
+html * {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.mission-card {
+  @apply bg-white rounded-2xl p-6 max-h-fit shadow-2xl hover:-translate-y-1.5 flex flex-col justify-center;
+  font-family: "Shippori Mincho", serif;
+}
+
+.mission-card h3 {
+  @apply text-secondary text-2xl font-semibold;
+}
+
+.mission-card p {
+  @apply text-slate-700 text-lg leading-normal mt-3;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.mission-card span {
+  @apply h-12 bg-orange-100 rounded-lg w-12  bg-size-[60%] bg-no-repeat mb-3 bg-center;
+}
+
+.review-card {
+  @apply p-8 flex-col flex bg-white rounded-lg shadow-lg hover:-translate-y-1
+}
+
+.review-text {
+  @apply italic text-amber-800 my-2 text-lg grow;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.rating-stars {
+  @apply flex gap-2 mb-4;
+}
+
+.rating-stars span {
+  @apply bg-no-repeat bg-[url(/icons/star.svg)] h-5 w-5 block;
+}
+
+.reviewer {
+  @apply mt-6 flex gap-2 items-center font-semibold text-secondary
+}
+
+.reviewer span {
+  @apply h-10 w-10 block bg-cover;
+}
+
+.contact-source {
+  @apply flex gap-2 mb-10 items-center;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.contact-source span {
+  @apply bg-no-repeat bg-size-[60%] bg-center bg-secondary/10 h-8 w-8 rounded-full
+}
+
+.form-element {
+  @apply flex flex-col gap-2;
+}
+
+input, textarea {
+  @apply focus:border-primary border rounded-lg outline-none p-3 border-slate-300 w-full
+}
+
+#bookDemo {
+  @apply w-5 h-5 bg-transparent cursor-pointer border-none ring-0 text-white accent-primary focus:ring-2 focus:ring-primary rounded-lg;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--primary);
+}
+
+
+label {
+  @apply ml-1 font-semibold text-secondary;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+
+
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+}
+
+@font-face {
+  font-family: "Shippori Mincho";
+  src: url(./assets/shippori_mincho.ttf);
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url(./assets/fonts/alegreya_sans.ttf);
+}
+
+.font-shippori-mincho {
+  font-family: "Shippori Mincho", serif;
+}
+
+.font-alegreya-sans {
+  font-family: "Alegreya Sans", sans-serif;
+}
