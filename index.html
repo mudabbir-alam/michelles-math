@@ -8,9 +8,9 @@
   <title>Michelle's Private Math Tutoring</title>
 </head>
 
-<body class="min-h-screen bg-background selection:bg-primary font-alegreya-sans text-lg">
+<body class="min-h-screen bg-background selection:bg-primary font-alegreya-sans lg:text-lg">
   <header
-    class="w-full h-16 lg:h-20 bg-white/80 backdrop-blur-2xl border-b border-slate-300 px-4 md:px-12 fixed top-0 z-10">
+    class="w-full h-16 lg:h-20 bg-white/80 backdrop-blur-2xl border-b border-slate-300 fixed top-0 z-10">
     <div class="flex h-full w-full max-w-7xl mx-auto justify-between items-center px-4 md:px-12">
       <a href="/"><img src="/icons/logo.png" class="h-8 lg:h-10" alt="logo"></a>
       <nav class="gap-12 ml-32 items-center h-full hidden lg:flex">
@@ -23,7 +23,7 @@
           class="text-secondary font-semibold h-2/5 border-b-3 border-transparent hover:border-primary align-middle flex items-center">Testimonials</a>
       </nav>
       <a href="#contact"
-        class="hover:scale-110 shadow-2xl bg-primary text-white font-bold px-8 py-2 rounded-3xl">Get Started</a>
+        class="hover:scale-110 shadow-2xl bg-primary text-white font-bold px-6 py-2 rounded-3xl">Get Started</a>
     </div>
   </header>
   <div class="min-h-[95vh] absolute top-0 left-0 w-full -z-10">
@@ -31,9 +31,9 @@
     <div class="absolute -z-10 w-full h-full bg-linear-to-r from-secondary/80 via-secondary/40 to-transparent"></div>
   </div>
   <main class="">
-    <section id="hero" class="w-full min-h-[95vh] max-w-7xl mx-auto py-20 lg:py-42 flex items-center px-4 md:px-12">
+    <section id="hero" class="w-full min-h-[95vh] max-w-7xl mx-auto py-28 lg:py-42 flex items-center px-4 md:px-12">
       <div class="text-white md:basis-3/5">
-        <h1 class="text-5xl md:text-6xl leading-tight font-shippori-mincho font-black">Unlock Your Child's <br
+        <h1 class="text-[42px] md:text-6xl leading-tight font-shippori-mincho font-black">Unlock Your Child's <br
             class="hidden md:block">Math Potential
         </h1>
         <p class="mt-6 text-xl font-alegreya-sans text-slate-100">Personalized math tutoring that transforms confusion
@@ -110,7 +110,7 @@
     <section id="testimonials" class="w-full max-w-7xl py-20 mx-auto px-4 md:px-12">
       <h2 class="font-bold text-4xl md:text-5xl text-center text-secondary mb-6 font-shippori-mincho">What Students and Parents are
         Saying</h2>
-      <p class="font-alegreya-sans text-2xl text-center text-primary">Stories of growth, understanding, and newfound
+      <p class="text-xl md:text-2xl text-center text-primary">Stories of growth, understanding, and newfound
         confidence in mathematics.</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         <div class="review-card">
@@ -166,7 +166,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <form class="p-6 md:p-12 bg-white rounded-2xl shadow-lg space-y-8">
-        <div class="grid grid-cols-2 gap-6">
+        <div class="grid md:grid-cols-2 gap-6">
           <div class="form-element">
             <label for="name">Full Name</label>
             <input type="text" name="name" id="name" required>
@@ -196,8 +196,8 @@
   </main>
   <footer class="w-full bg-white border-t border-primary/40 py-8">
     <div class="w-full max-w-7xl px-4 md:px-12 py-8 mx-auto flex flex-col sm:flex-row justify-between items-center">
-      <div class="">
-        <img src="/icons/logo.png" class="h-10 mb-4" alt="logo">
+      <div>
+        <img src="/icons/logo.png" class="h-8 mb-4" alt="logo">
         <div class="text-lg">Building academic confidence through expert, personalized mathematics instruction.</div>
       </div>
       <nav class="flex gap-12 items-center mx-32 my-8 md:my-auto">
@@ -212,7 +212,7 @@
       </div>
       
     </div>
-    <div class="w-full max-w-7xl px-4 md:px-12 mx-auto py-6 flex flex-col md:flex-row items-center justify-between border-t border-slate-300">
+    <div class="w-full max-w-7xl px-4 md:px-12 mx-auto py-6 flex flex-col md:flex-row items-center gap-4 md:justify-between border-t border-slate-300">
       <div class="text-secondary">Copyright &copy; <span id="currentYear"></span> Michelle's Private Math Tutoring</div>
       <div class="text-secondary">Made with ❤️ by Mudabbir Alam</div>
     </div>
